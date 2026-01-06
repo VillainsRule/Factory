@@ -47,7 +47,7 @@ Kiln Assisted uses [Kiln](https://github.com/VillainsRule/Kiln) to automatically
 <br>
 
 ### Email Service
-Comprehensive instructions for email generation have been removed due to the frequent changes in temporary email providers. Please refer to the comments in `build/providers/getProvider.ts` and example at `build/providers/example/tempmail.ts` for guidance on using temporary email providers.
+Comprehensive instructions for email generation have been removed due to the frequent changes in temporary email providers. Please refer to the comments in `build/providers/getProvider.ts` and example at `build/providers/example/malq.ts` for guidance on using temporary email providers.
 
 <br><br>
 
