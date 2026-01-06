@@ -55,7 +55,8 @@ export default {
             });
         }
 
-        if (interaction.user.id !== Bun.env.ADMIN_USER_ID) return interaction.reply({ content: ':giggle: no.' });
+        const admins = Bun.env.ALLOWED_USERS?.split(',').map(id => id.trim()) || [];
+        if (!admins.includes(interaction.user.id)) return interaction.reply({ content: ':giggle: no.' });
 
         if (interaction.options.getSubcommand() === 'generate') {
             const user = interaction.options.getString('user', true).trim();
