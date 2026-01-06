@@ -1,0 +1,11 @@
+# node
+node_modules
+bun.lock
+
+# protcted
+data
+impl
+.env
+
+# mac
+.DS_Store

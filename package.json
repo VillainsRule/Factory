@@ -1,0 +1,14 @@
+{
+    "name": "factory",
+    "scripts": {
+        "generate": "bun build/run.ts",
+        "prod": "bun prod/main.ts"
+    },
+    "dependencies": {
+        "discord.js": "^14.25.1",
+        "yolkbot": "alpha"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.3.5"
+    }
+}
