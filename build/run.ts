@@ -60,7 +60,9 @@ setInterval(async () => {
             console.log(`Verified email "${address}"!`);
         }
 
-        accounts += `${address} ${password}\n`;
+        if (Bun.env.GEN_LOG_PROVIDER === '1') accounts += `${address} ${password} ${email.provider}\n`;
+        else accounts += `${address} ${password}\n`;
+
         fs.writeFileSync(accPath, accounts, 'utf8');
 
         const addressSafe = address.replace(/@.*/, '@*****');
